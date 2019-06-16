@@ -33,6 +33,7 @@ void Server_PID_Ctrl();
 void Get_Direction_Error();
 void Normal_Run();
 void Run_In_Annulus();
+void Run_In_Right_angle();
 
 
 #endif

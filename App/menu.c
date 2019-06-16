@@ -605,6 +605,7 @@ void Set_Pid(void)
 void Show_Distance(void)
 {
   char buf1[22] = {"\0"};
+  extern KEY key;
   while(key.key_value != BACK)
   {
     sprintf(buf1, "Dis:%f mm", distance/10.0);

@@ -26,8 +26,9 @@ enum Run_Status//运行状态枚举
 {
     Normal,//正常
     Lost_track,//丢线
+    Right_angle,//直角
     Annulus,//圆环
-    roadblock,//路障
+    Roadblock,//路障
     Stop//停车
 }Run_status;
 
@@ -87,7 +88,8 @@ void Server_PID_Ctrl()
 enum Run_Status Get_Status()
 {
     if((L_AD<=5)&&(R_AD<=5))return Lost_track;
-    if(M_AD>750)return Annulus;
+    if(M_AD>650)return Annulus;//中间值特别大
+    if((abs(LM_AD-RM_AD)>400)&&(abs(L_AD-R_AD)<100))return Right_angle;//斜电感差值大，横电感差值小
     return Normal;
 }
 void Get_Direction_Error()
@@ -97,18 +99,18 @@ void Get_Direction_Error()
     {
         case Normal:Normal_Run();break;
         case Annulus:Run_In_Annulus();break;
+        case Right_angle:Run_In_Right_angle();break;
         default:Normal_Run();
     }   
 }
 
 void Normal_Run()
 {
-    float error,xerror,serror;
+    float error,xerror;
     lock_status_flag = 0;
-    error  = 100.0*(L_AD-R_AD)/(float)(L_AD+R_AD+M_AD);
-    xerror = 100.0*(LM_AD-RM_AD)/(float)(LM_AD+RM_AD+M_AD);
-    serror = 100.0*(LS_AD-RS_AD)/(float)(LS_AD+RS_AD+M_AD);
-    Server.Error = 0.7*error + 0.3*xerror;//+ serror;
+    error  = 70.0*(L_AD-R_AD)/(float)(L_AD+R_AD+M_AD);
+    xerror = 30.0*(LM_AD-RM_AD)/(float)(LM_AD+RM_AD+M_AD);
+    Server.Error = error + xerror;
 }
 
 void Run_In_Annulus()
@@ -128,14 +130,24 @@ void Run_In_Annulus()
             annulus_direction = 0;//右
         }
     }
-    if(viameter < 9000)//路程不到，固定偏差走
+    if(viameter < 10000)//路程不到，固定偏差走
     {
-        if(annulus_direction)Server.Error = 100.0*(L_AD-R_AD)/(float)(L_AD+R_AD) - 0.5*(LM_AD+RM_AD);
-        else                 Server.Error = 100.0*(L_AD-R_AD)/(float)(L_AD+R_AD) + 0.5*(LM_AD+RM_AD);
+        if(annulus_direction)Server.Error = 100.0*(LM_AD-R_AD)/(float)(LM_AD+R_AD) - 0.5*(M_AD);
+        else                 Server.Error = 100.0*(LM_AD-R_AD)/(float)(LM_AD+R_AD) + 0.5*(M_AD);
     }
     else//路程到
     {
         lock_status_flag = 0;//解除圆环状态
         viameter_on_flag = 0;//关闭路程计数器
     }
+}
+
+void Run_In_Right_angle()
+{
+    float error,xerror;
+    beep_on = 3;//提示音
+    lock_status_flag = 0;
+    error  = 20.0*(L_AD-R_AD)/(float)(L_AD+R_AD+M_AD);
+    xerror = 80.0*(LM_AD-RM_AD)/(float)(LM_AD+RM_AD+M_AD);
+    Server.Error = error + xerror;
 }
