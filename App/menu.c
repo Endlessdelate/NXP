@@ -388,9 +388,9 @@ void Set_Parameter(float *value)
                     count = 9;
             }
         }
-        disable_irq (PORTA_IRQn);
+        DisableInterrupts;
         OLED_P6x8Str(0, 0, temp);
-        enable_irq (PORTA_IRQn);
+        EnableInterrupts;
     }
     count = 0;               //×¢ÒâÒªÇåÁã
 }

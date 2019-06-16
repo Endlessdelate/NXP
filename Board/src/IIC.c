@@ -20,8 +20,9 @@ static void nops(void)
     asm("nop");
     asm("nop");
     asm("nop");
-   // asm("nop");
-   //asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
 }
 
 //-------------------------------------------------------------------------*
@@ -307,6 +308,7 @@ else
     }
     I2C1_SCL_L;
     SDA1_Out;
+    IIC_Ack(I2C_1);
     return c;
 }
 }

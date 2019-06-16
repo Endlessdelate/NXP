@@ -169,13 +169,13 @@ int16* ADC_Uniformization()//归一化（暂时没用）
 void Read_ADC()
 {
     Get_Smoothed_ADC();
-    L_AD  = Get_Value_Sum(&Value[0])-3;
-    R_AD  = Get_Value_Sum(&Value[7])-13;
-    LS_AD = Get_Value_Sum(&Value[1])-9;
-    RS_AD = Get_Value_Sum(&Value[6])-13;
-    LM_AD = Get_Value_Sum(&Value[2])-35;
-    RM_AD = Get_Value_Sum(&Value[5])-11;
-    M_AD =  Get_Value_Sum(&Value[3])-76;
+    L_AD  = Get_Value_Sum(&Value[0])-5;
+    R_AD  = Get_Value_Sum(&Value[7])-31;
+    LS_AD = Get_Value_Sum(&Value[1])-12 ;
+    RS_AD = Get_Value_Sum(&Value[6])-31;
+    LM_AD = Get_Value_Sum(&Value[2])-41;
+    RM_AD = Get_Value_Sum(&Value[5])-18;
+    M_AD =  Get_Value_Sum(&Value[3])-82;
     #if 0
     L_AD = 200,
     R_AD = 0,

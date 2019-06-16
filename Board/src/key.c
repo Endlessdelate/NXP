@@ -69,7 +69,7 @@ void PORTE_IRQHandler(void)                 //按键中断函数
 void Key_Handler(void)                      //按键服务函数
 {
     key.key_value = Get_Keynum();
-    //Beep_Once(100);
+    beep_on = 1;
 }
 
 void KEY_Mode()

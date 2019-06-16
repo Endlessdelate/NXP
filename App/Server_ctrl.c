@@ -7,10 +7,8 @@
 */
 
 /*
- * When I wrote this, only God and I understood what I was doing
- * Now, God only knows
- */
-/*
+* When I wrote this, only God and I understood what I was doing
+* Now, God only knows
 * 写这段代码的时候，只有上帝和我知道它是干嘛的
 * 现在，只有上帝知道
 */
@@ -39,12 +37,12 @@ void PID_Init(void)
 {
     Server.Kp = 18;
     Server.Ki = 0;
-    Server.Kd = 20;
+    Server.Kd = 40;
     
     Motor.Kp = 50;
     Motor.Ki = 5;
     Motor.Kd = 0;
-    Motor.Set_Speed = 100;
+    Motor.Set_Speed = 200;
 }
 
 void Server_Init()
@@ -89,7 +87,7 @@ void Server_PID_Ctrl()
 enum Run_Status Get_Status()
 {
     if((L_AD<=5)&&(R_AD<=5))return Lost_track;
-    if(M_AD>800)return Annulus;
+    if(M_AD>750)return Annulus;
     return Normal;
 }
 void Get_Direction_Error()

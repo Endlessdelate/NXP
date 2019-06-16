@@ -2370,6 +2370,9 @@
             <name>$PROJ_DIR$\..\..\Board\src\OLED.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\Board\src\Stop.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\Board\src\VCAN_BMP.c</name>
         </file>
         <file>

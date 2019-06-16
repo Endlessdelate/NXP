@@ -49,6 +49,7 @@ void System_Init()
     Server_Init();
     Beep_Init();
     Superware_Init();
+    AD_Stop_Init();
     
     pit_init_ms(PIT0,2);                                     //初始化PIT0，定时时间为： 2ms  方向控制周期  
     set_vector_handler(PIT0_VECTORn ,PIT0_IRQHandler);       //设置PIT0的中断服务函数为 PIT0_IRQHandler    
