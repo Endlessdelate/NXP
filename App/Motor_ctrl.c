@@ -16,8 +16,8 @@ uint8 viameter_on_flag = 0;//路程计数器开启标志位
  */
 void Motor_Init()
 {
-    ftm_pwm_init(FTM0, FTM_CH2,12*1000,0,FTM0_CH2_PIN);
-    ftm_pwm_init(FTM0, FTM_CH3,12*1000,0,FTM0_CH3_PIN);
+    ftm_pwm_init(FTM0, FTM_CH2,17*1000,0,FTM0_CH2_PIN);
+    ftm_pwm_init(FTM0, FTM_CH3,17*1000,0,FTM0_CH3_PIN);
     Motor.OUTPWM = 0;
 }
 

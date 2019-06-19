@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.11.3.13950/W32 for ARM                16/Jun/2019  20:27:18
+# IAR ELF Linker V8.11.3.13950/W32 for ARM                19/Jun/2019  09:46:17
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -10,7 +10,7 @@
 #        D:\Smart Car Program\Software\EDD smart
 #        car\V1.1\Prj\IAR\MK66FX18_Debug\List\vcan_Kinetis.map
 #    Command line =  
-#        -f C:\Users\11192\AppData\Local\Temp\EW8CE6.tmp ("D:\Smart Car
+#        -f C:\Users\11192\AppData\Local\Temp\EW3B2E.tmp ("D:\Smart Car
 #        Program\Software\EDD smart car\V1.1\Prj\IAR\MK66FX18_Debug\Obj\ADC.o"
 #        "D:\Smart Car Program\Software\EDD smart
 #        car\V1.1\Prj\IAR\MK66FX18_Debug\Obj\Beep.o" "D:\Smart Car
@@ -161,7 +161,7 @@ initialize manually with packing = copy, complex ranges { section .data };
   .noinit              ro code  0x00010410     0x8  startup_MK66FX18.o [1]
                               - 0x00010418     0x8
 
-"P1", part 1 of 2:                          0x5014
+"P1", part 1 of 2:                          0x4ffc
   .text                ro code  0x00010418   0xbe0  menu.o [1]
   .text                ro code  0x00010ff8     0x6  ABImemclr4.o [5]
   .rodata              const    0x00010ffe     0x2  VCAN_computer.o [1]
@@ -196,45 +196,47 @@ initialize manually with packing = copy, complex ranges { section .data };
   .text                ro code  0x00013320   0x23c  iar_Stoxflt.o [3]
   .text                ro code  0x0001355c    0x2c  xgetmemchunk.o [3]
   .text                ro code  0x00013588     0xa  cexit.o [5]
-  .text                ro code  0x00013594    0x70  VCAN_LED.o [1]
-  .text                ro code  0x00013604   0x238  MK66_uart.o [1]
-  .text                ro code  0x0001383c    0x14  isspace.o [3]
-  .text                ro code  0x00013850    0x14  isalpha.o [3]
-  .text                ro code  0x00013864    0x40  xlocale_c.o [3]
-  .text                ro code  0x000138a4    0xe2  DblSub.o [4]
-  .text                ro code  0x00013988    0x58  memchr.o [5]
-  .text                ro code  0x000139e0     0xc  XXexit.o [5]
-  .text                ro code  0x000139ec   0x540  Server_ctrl.o [1]
-  .text                ro code  0x00013f2c     0x8  abs.o [3]
-  .rodata              const    0x00013f34   0x400  OLED.o [1]
-  .text                ro code  0x00014334   0x23c  main.o [1]
-  .text                ro code  0x00014570   0x15c  key.o [1]
-  .text                ro code  0x000146cc   0x1dc  Motor_ctrl.o [1]
-  .text                ro code  0x000148a8    0x5c  Beep.o [1]
-  .text                ro code  0x00014904   0x154  Stop.o [1]
-  .text                ro code  0x00014a58    0x40  VCAN_computer.o [1]
-  .text                ro code  0x00014a98    0x58  VCAN_key.o [1]
-  .rodata              const    0x00014af0   0x228  OLED.o [1]
-  .text                ro code  0x00014d18   0x12c  system_MK66FX18.o [1]
-  .text                ro code  0x00014e44    0x40  MK66_wdog.o [1]
-  .data_init                    0x00014e84    0xe4  <Block>
-    Initializer bytes  const    0x00014e84    0xe4  <for .data-1>
-  .rodata              const    0x00014f68    0xc0  menu.o [1]
-  .rodata              const    0x00015028    0x48  MK66_adc.o [1]
-  .rodata              const    0x00015070    0x48  MK66_gpio.o [1]
-  .rodata              const    0x000150b8    0x48  MK66_uart.o [1]
-  .text                ro code  0x00015100    0x40  zero_init3.o [5]
-  .text                ro code  0x00015140    0x28  data_init.o [5]
-  .rodata              const    0x00015168    0x24  MK66_conf.o [1]
-  .text                ro code  0x0001518c    0x22  fpinit_M.o [4]
-  .iar.init_table      const    0x000151b0    0x10  - Linker created -
-  .text                ro code  0x000151c0    0x1a  cmain.o [5]
-  .text                ro code  0x000151da     0x4  low_level_init.o [3]
-  .rodata              const    0x000151e0    0x14  menu.o [1]
-  .rodata              const    0x000151f4    0x10  menu.o [1]
-  .rodata              const    0x00015204    0x10  menu.o [1]
-  .rodata              const    0x00015214    0x10  menu.o [1]
-  .rodata              const    0x00015224     0xc  key.o [1]
+  .text                ro code  0x00013594    0xac  VCAN_LED.o [1]
+  .text                ro code  0x00013640   0x238  MK66_uart.o [1]
+  .text                ro code  0x00013878    0x14  isspace.o [3]
+  .text                ro code  0x0001388c    0x14  isalpha.o [3]
+  .text                ro code  0x000138a0    0x40  xlocale_c.o [3]
+  .text                ro code  0x000138e0    0xe2  DblSub.o [4]
+  .text                ro code  0x000139c4    0x58  memchr.o [5]
+  .text                ro code  0x00013a1c     0xc  XXexit.o [5]
+  .text                ro code  0x00013a28   0x4f8  Server_ctrl.o [1]
+  .text                ro code  0x00013f20     0x8  abs.o [3]
+  .rodata              const    0x00013f28   0x400  OLED.o [1]
+  .text                ro code  0x00014328   0x23c  main.o [1]
+  .text                ro code  0x00014564   0x15c  key.o [1]
+  .text                ro code  0x000146c0   0x1dc  Motor_ctrl.o [1]
+  .text                ro code  0x0001489c    0x5c  Beep.o [1]
+  .text                ro code  0x000148f8   0x148  Stop.o [1]
+  .text                ro code  0x00014a40    0x40  VCAN_computer.o [1]
+  .text                ro code  0x00014a80    0x58  VCAN_key.o [1]
+  .rodata              const    0x00014ad8   0x228  OLED.o [1]
+  .text                ro code  0x00014d00   0x12c  system_MK66FX18.o [1]
+  .text                ro code  0x00014e2c    0x40  MK66_wdog.o [1]
+  .data_init                    0x00014e6c    0xe4  <Block>
+    Initializer bytes  const    0x00014e6c    0xe4  <for .data-1>
+  .rodata              const    0x00014f50    0xc0  menu.o [1]
+  .rodata              const    0x00015010    0x48  MK66_adc.o [1]
+  .rodata              const    0x00015058    0x48  MK66_gpio.o [1]
+  .rodata              const    0x000150a0    0x48  MK66_uart.o [1]
+  .text                ro code  0x000150e8    0x40  zero_init3.o [5]
+  .text                ro code  0x00015128    0x28  data_init.o [5]
+  .rodata              const    0x00015150    0x24  MK66_conf.o [1]
+  .text                ro code  0x00015174    0x22  fpinit_M.o [4]
+  .iar.init_table      const    0x00015198    0x10  - Linker created -
+  .text                ro code  0x000151a8    0x1a  cmain.o [5]
+  .text                ro code  0x000151c2     0x4  low_level_init.o [3]
+  .rodata              const    0x000151c8    0x14  menu.o [1]
+  .rodata              const    0x000151dc    0x10  menu.o [1]
+  .rodata              const    0x000151ec    0x10  menu.o [1]
+  .rodata              const    0x000151fc    0x10  menu.o [1]
+  .rodata              const    0x0001520c     0xc  key.o [1]
+  .rodata              const    0x00015218     0xc  menu.o [1]
+  .rodata              const    0x00015224     0xc  menu.o [1]
   .rodata              const    0x00015230     0xc  menu.o [1]
   .rodata              const    0x0001523c     0xc  menu.o [1]
   .rodata              const    0x00015248     0xc  menu.o [1]
@@ -259,10 +261,11 @@ initialize manually with packing = copy, complex ranges { section .data };
   .rodata              const    0x0001532c     0xc  menu.o [1]
   .rodata              const    0x00015338     0xc  menu.o [1]
   .rodata              const    0x00015344     0xc  menu.o [1]
-  .rodata              const    0x00015350     0xc  menu.o [1]
-  .rodata              const    0x0001535c     0xc  menu.o [1]
-  .rodata              const    0x00015368     0xc  MK66_conf.o [1]
-  .text                ro code  0x00015374     0xc  cstartup_M.o [5]
+  .rodata              const    0x00015350     0xc  MK66_conf.o [1]
+  .text                ro code  0x0001535c     0xc  cstartup_M.o [5]
+  .rodata              const    0x00015368     0x8  menu.o [1]
+  .rodata              const    0x00015370     0x8  menu.o [1]
+  .rodata              const    0x00015378     0x8  menu.o [1]
   .rodata              const    0x00015380     0x8  menu.o [1]
   .rodata              const    0x00015388     0x8  menu.o [1]
   .rodata              const    0x00015390     0x8  menu.o [1]
@@ -280,16 +283,13 @@ initialize manually with packing = copy, complex ranges { section .data };
   .rodata              const    0x000153f0     0x8  menu.o [1]
   .rodata              const    0x000153f8     0x8  menu.o [1]
   .rodata              const    0x00015400     0x8  menu.o [1]
-  .rodata              const    0x00015408     0x8  menu.o [1]
-  .rodata              const    0x00015410     0x8  menu.o [1]
-  .rodata              const    0x00015418     0x8  menu.o [1]
-  .rodata              const    0x00015420     0x6  xlocale_c.o [3]
-  .rodata              const    0x00015428     0x4  menu.o [1]
-  .rodata              const    0x0001542c     0x0  zero_init3.o [5]
-                              - 0x0001542c  0x5014
+  .rodata              const    0x00015408     0x6  xlocale_c.o [3]
+  .rodata              const    0x00015410     0x4  menu.o [1]
+  .rodata              const    0x00015414     0x0  zero_init3.o [5]
+                              - 0x00015414  0x4ffc
 
 "P1", part 2 of 2:                             0x0
-  CodeRelocate                  0x0001542c     0x0  <Block>
+  CodeRelocate                  0x00015414     0x0  <Block>
 
 "P2", part 1 of 3:                            0xe4
   .data                         0x1fff0410    0xe4  <Block>
@@ -338,7 +338,8 @@ initialize manually with packing = copy, complex ranges { section .data };
     .bss               zero     0x1fff060b     0x1  Server_ctrl.o [1]
     .bss               zero     0x1fff060c     0x1  Server_ctrl.o [1]
     .bss               zero     0x1fff060d     0x1  Server_ctrl.o [1]
-    .bss               zero     0x1fff060e     0x1  Superware.o [1]
+    .bss               zero     0x1fff060e     0x1  Server_ctrl.o [1]
+    .bss               zero     0x1fff060f     0x1  Superware.o [1]
                               - 0x1fff0610   0x11c
 
 "P2", part 3 of 3:                           0x200
@@ -355,8 +356,8 @@ initialize manually with packing = copy, complex ranges { section .data };
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x11b:
-          0x1fff04f4  0x11b
+    1 destination range, total size 0x11c:
+          0x1fff04f4  0x11c
 
 
 
@@ -378,10 +379,10 @@ D:\Smart Car Program\Software\EDD smart car\V1.1\Prj\IAR\MK66FX18_Debug\Obj: [1]
     MK66_wdog.o              64
     Motor_ctrl.o            476                49
     OLED.o                  682    1 576
-    Server_ctrl.o         1 344                47
-    Stop.o                  340
+    Server_ctrl.o         1 272                48
+    Stop.o                  328
     Superware.o             268                 3
-    VCAN_LED.o              112        4        4
+    VCAN_LED.o              172        4        4
     VCAN_computer.o          64        4
     VCAN_key.o               88        8        8
     key.o                   348       12        2
@@ -392,7 +393,7 @@ D:\Smart Car Program\Software\EDD smart car\V1.1\Prj\IAR\MK66FX18_Debug\Obj: [1]
     system_MK66FX18.o       300                12
     vectors.o                      1 040
     ---------------------------------------------
-    Total:               11 906    3 800      375
+    Total:               11 882    3 800      376
 
 command line: [2]
     ---------------------------------------------
@@ -447,7 +448,7 @@ rt7M_tl.a: [5]
     Gaps                     18        6
     Linker created                    16      512
 -------------------------------------------------
-    Grand Total:         17 592    3 956    1 023
+    Grand Total:         17 568    3 956    1 024
 
 
 *******************************************************************************
@@ -460,43 +461,43 @@ Entry                      Address   Size  Type      Object
 .bss$$Limit             0x1fff0610          --   Gb  - Linker created -
 .data$$Base             0x1fff0410          --   Gb  - Linker created -
 .data$$Limit            0x1fff04f4          --   Gb  - Linker created -
-.data_init$$Base        0x00014e84          --   Gb  - Linker created -
-.data_init$$Limit       0x00014f68          --   Gb  - Linker created -
-.iar.init_table$$Base   0x000151b0          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x000151c0          --   Gb  - Linker created -
-?main                   0x000151c1         Code  Gb  cmain.o [5]
+.data_init$$Base        0x00014e6c          --   Gb  - Linker created -
+.data_init$$Limit       0x00014f50          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00015198          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000151a8          --   Gb  - Linker created -
+?main                   0x000151a9         Code  Gb  cmain.o [5]
 ADCN                    0x1fff0424    0x8  Data  Gb  MK66_adc.o [1]
 ADC_Init                0x000114e9   0x50  Code  Gb  ADC.o [1]
-AD_Stop_Init            0x00014941   0x32  Code  Gb  Stop.o [1]
-ASSERT_FAILED_STR       0x00015168   0x24  Data  Gb  MK66_conf.o [1]
+AD_Stop_Init            0x00014935   0x32  Code  Gb  Stop.o [1]
+ASSERT_FAILED_STR       0x00015150   0x24  Data  Gb  MK66_conf.o [1]
 Add_Value               0x00011465   0x16  Code  Gb  ADC.o [1]
-Beep                    0x000148cf   0x2e  Code  Gb  Beep.o [1]
-Beep_Init               0x000148a9    0xe  Code  Gb  Beep.o [1]
-Beep_Start              0x000148b7    0xc  Code  Gb  Beep.o [1]
-Beep_Stop               0x000148c3    0xc  Code  Gb  Beep.o [1]
+Beep                    0x000148c3   0x2e  Code  Gb  Beep.o [1]
+Beep_Init               0x0001489d    0xe  Code  Gb  Beep.o [1]
+Beep_Start              0x000148ab    0xc  Code  Gb  Beep.o [1]
+Beep_Stop               0x000148b7    0xc  Code  Gb  Beep.o [1]
 Change_Level            0x00010831   0x36  Code  Gb  menu.o [1]
 Chose_Menu              0x00010681   0x46  Code  Lc  menu.o [1]
-CodeRelocate$$Base      0x0001542c          --   Gb  - Linker created -
-CodeRelocate$$Limit     0x0001542c          --   Gb  - Linker created -
+CodeRelocate$$Base      0x00015414          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00015414          --   Gb  - Linker created -
 CodeRelocateRam$$Base   0x1fff0610          --   Gb  - Linker created -
 CodeRelocateRam$$Limit  0x1fff0610          --   Gb  - Linker created -
 DeQueue                 0x0001143d   0x28  Code  Gb  ADC.o [1]
 Dtentox                 0x000122ad  0x196  Code  Lc  strto64.o [4]
 Empty                   0x00010449    0x2  Code  Gb  menu.o [1]
 EnQueue                 0x0001140b   0x32  Code  Gb  ADC.o [1]
-Encoder_init            0x0001479f   0x12  Code  Gb  Motor_ctrl.o [1]
+Encoder_init            0x00014793   0x12  Code  Gb  Motor_ctrl.o [1]
 Exe_Fuc                 0x00010767   0xb2  Code  Lc  menu.o [1]
-F6x8                    0x00014af0  0x228  Data  Gb  OLED.o [1]
+F6x8                    0x00014ad8  0x228  Data  Gb  OLED.o [1]
 GPIOX                   0x1fff042c   0x14  Data  Gb  MK66_gpio.o [1]
 Get_Deep                0x0001044b   0x64  Code  Lc  menu.o [1]
-Get_Direction_Error     0x00013b8f   0x44  Code  Gb  Server_ctrl.o [1]
-Get_Keynum              0x00014603   0x4c  Code  Gb  key.o [1]
+Get_Direction_Error     0x00013bdf   0x3e  Code  Gb  Server_ctrl.o [1]
+Get_Keynum              0x000145f7   0x4c  Code  Gb  key.o [1]
 Get_Level_Num           0x000104af   0x50  Code  Lc  menu.o [1]
 Get_Menu_Num            0x000104ff    0xa  Code  Lc  menu.o [1]
 Get_Ntimes_average      0x00011539   0x3c  Code  Gb  ADC.o [1]
 Get_Smoothed_ADC        0x00011575   0x84  Code  Gb  ADC.o [1]
-Get_Speed               0x000147b1   0x50  Code  Gb  Motor_ctrl.o [1]
-Get_Status              0x00013b1d   0x72  Code  Gb  Server_ctrl.o [1]
+Get_Speed               0x000147a5   0x50  Code  Gb  Motor_ctrl.o [1]
+Get_Status              0x00013b59   0x86  Code  Gb  Server_ctrl.o [1]
 Get_Value_Sum           0x0001148f   0x5a  Code  Gb  ADC.o [1]
 HEAP$$Base              0x1fff0610          --   Gb  - Linker created -
 HEAP$$Limit             0x1fff0810          --   Gb  - Linker created -
@@ -511,10 +512,10 @@ Inner_Flash             0x000109b3   0xb8  Code  Gb  menu.o [1]
 IsEmpty                 0x000113fd    0xe  Code  Gb  ADC.o [1]
 IsFull                  0x000113dd   0x20  Code  Gb  ADC.o [1]
 KEY_PTxn                0x1fff0468    0x8  Data  Gb  VCAN_key.o [1]
-Key_Handler             0x0001469d   0x12  Code  Gb  key.o [1]
-Key_Init                0x00014587   0x54  Code  Gb  key.o [1]
-Key_Read                0x0001464f   0x34  Code  Gb  key.o [1]
-Key_Write               0x000145db   0x28  Code  Gb  key.o [1]
+Key_Handler             0x00014691   0x12  Code  Gb  key.o [1]
+Key_Init                0x0001457b   0x54  Code  Gb  key.o [1]
+Key_Read                0x00014643   0x34  Code  Gb  key.o [1]
+Key_Write               0x000145cf   0x28  Code  Gb  key.o [1]
 LED_PTxn                0x1fff0470    0x4  Data  Gb  VCAN_LED.o [1]
 LM_AD                   0x1fff05f8    0x2  Data  Gb  ADC.o [1]
 LS_AD                   0x1fff05f4    0x2  Data  Gb  ADC.o [1]
@@ -527,20 +528,20 @@ Menu_Forward            0x00010509   0xb0  Code  Lc  menu.o [1]
 Menu_Init               0x00010819   0x18  Code  Gb  menu.o [1]
 Menu_Up                 0x0001063f   0x42  Code  Lc  menu.o [1]
 Motor                   0x1fff0580   0x2c  Data  Gb  Motor_ctrl.o [1]
-Motor_Init              0x000146cd   0x40  Code  Gb  Motor_ctrl.o [1]
-Motor_Run               0x0001470d   0x92  Code  Gb  Motor_ctrl.o [1]
+Motor_Init              0x000146c1   0x40  Code  Gb  Motor_ctrl.o [1]
+Motor_Run               0x00014701   0x92  Code  Gb  Motor_ctrl.o [1]
 NVIC_DisableIRQ         0x00010431   0x18  Code  Lc  menu.o [1]
-NVIC_EnableIRQ          0x00014571   0x16  Code  Lc  key.o [1]
-NVIC_EnableIRQ          0x00014351   0x16  Code  Lc  main.o [1]
+NVIC_EnableIRQ          0x00014565   0x16  Code  Lc  key.o [1]
+NVIC_EnableIRQ          0x00014345   0x16  Code  Lc  main.o [1]
 NVIC_EnableIRQ          0x00010419   0x18  Code  Lc  menu.o [1]
-NVIC_EnableIRQ          0x00014905   0x16  Code  Lc  Stop.o [1]
+NVIC_EnableIRQ          0x000148f9   0x16  Code  Lc  Stop.o [1]
 NVIC_EnableIRQ          0x000118f9   0x16  Code  Lc  Superware.o [1]
-NVIC_SetPriority        0x00014367   0x26  Code  Lc  main.o [1]
-NVIC_SetPriority        0x0001491b   0x26  Code  Lc  Stop.o [1]
+NVIC_SetPriority        0x0001435b   0x26  Code  Lc  main.o [1]
+NVIC_SetPriority        0x0001490f   0x26  Code  Lc  Stop.o [1]
 NVIC_SetPriority        0x0001190f   0x26  Code  Lc  Superware.o [1]
 NVIC_SetPriorityGrouping
-                        0x00014335   0x1c  Code  Lc  main.o [1]
-Normal_Run              0x00013bd3   0xcc  Code  Gb  Server_ctrl.o [1]
+                        0x00014329   0x1c  Code  Lc  main.o [1]
+Normal_Run              0x00013c1d   0xcc  Code  Gb  Server_ctrl.o [1]
 OLED_CLS                0x000110f3   0x3a  Code  Gb  OLED.o [1]
 OLED_Fill               0x000110b5   0x3e  Code  Gb  OLED.o [1]
 OLED_IIC_Init           0x00011001   0x2c  Code  Gb  OLED.o [1]
@@ -550,14 +551,14 @@ OLED_Set_Pos            0x00011085   0x30  Code  Gb  OLED.o [1]
 OLED_Show_Length        0x0001126d   0x3e  Code  Gb  OLED.o [1]
 OLED_WrCmd              0x00011059   0x2c  Code  Gb  OLED.o [1]
 OLED_WrDat              0x0001102d   0x2c  Code  Gb  OLED.o [1]
-PID_Init                0x000139ed   0x44  Code  Gb  Server_ctrl.o [1]
-PIT0_IRQHandler         0x00014479   0x5a  Code  Gb  main.o [1]
-PIT1_IRQHandler         0x000144d5   0x36  Code  Gb  main.o [1]
-PIT2_IRQHandler         0x000149b1   0x8e  Code  Gb  Stop.o [1]
+PID_Init                0x00013a29   0x44  Code  Gb  Server_ctrl.o [1]
+PIT0_IRQHandler         0x0001446d   0x5a  Code  Gb  main.o [1]
+PIT1_IRQHandler         0x000144c9   0x36  Code  Gb  main.o [1]
+PIT2_IRQHandler         0x000149a5   0x88  Code  Gb  Stop.o [1]
 PORTC_IRQHandler        0x00011999   0x4c  Code  Gb  Superware.o [1]
-PORTC_IRQHandler::flag  0x1fff060e    0x1  Data  Lc  Superware.o [1]
-PORTD_IRQHandler        0x0001450d   0x28  Code  Gb  main.o [1]
-PORTE_IRQHandler        0x00014685   0x18  Code  Gb  key.o [1]
+PORTC_IRQHandler::flag  0x1fff060f    0x1  Data  Lc  Superware.o [1]
+PORTD_IRQHandler        0x00014501   0x28  Code  Gb  main.o [1]
+PORTE_IRQHandler        0x00014679   0x18  Code  Gb  key.o [1]
 PORTX                   0x1fff0440   0x14  Data  Gb  MK66_port.o [1]
 Parameter_Manage        0x00010a75  0x142  Code  Gb  menu.o [1]
 QueueLength             0x0001147b   0x14  Code  Gb  ADC.o [1]
@@ -565,18 +566,20 @@ RM_AD                   0x1fff05fa    0x2  Data  Gb  ADC.o [1]
 RS_AD                   0x1fff05f6    0x2  Data  Gb  ADC.o [1]
 R_AD                    0x1fff05f2    0x2  Data  Gb  ADC.o [1]
 Read_ADC                0x000115f9   0x5c  Code  Gb  ADC.o [1]
-Region$$Table$$Base     0x000151b0          --   Gb  - Linker created -
-Region$$Table$$Limit    0x000151c0          --   Gb  - Linker created -
+Region$$Table$$Base     0x00015198          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000151a8          --   Gb  - Linker created -
 Reset_Handler           0x00010411         Code  Gb  startup_MK66FX18.o [1]
-Run_In_Annulus          0x00013cb1  0x140  Code  Gb  Server_ctrl.o [1]
+Run_In_Annulus          0x00013cf9  0x150  Code  Gb  Server_ctrl.o [1]
 Run_In_Annulus::annulus_direction
                         0x1fff060d    0x1  Data  Lc  Server_ctrl.o [1]
-Run_In_Right_angle      0x00013df1   0xd2  Code  Gb  Server_ctrl.o [1]
+Run_In_Right_angle      0x00013e49   0x6a  Code  Gb  Server_ctrl.o [1]
+Run_In_Right_angle::angle_direction
+                        0x1fff060e    0x1  Data  Lc  Server_ctrl.o [1]
 Run_status              0x1fff060c    0x1  Data  Gb  Server_ctrl.o [1]
 Server                  0x1fff05b0   0x2c  Data  Gb  Server_ctrl.o [1]
-Server_Init             0x00013a31   0x20  Code  Gb  Server_ctrl.o [1]
-Server_PID_Ctrl         0x00013ab1   0x6c  Code  Gb  Server_ctrl.o [1]
-Server_Run              0x00013a51   0x60  Code  Gb  Server_ctrl.o [1]
+Server_Init             0x00013a6d   0x20  Code  Gb  Server_ctrl.o [1]
+Server_PID_Ctrl         0x00013aed   0x6c  Code  Gb  Server_ctrl.o [1]
+Server_Run              0x00013a8d   0x60  Code  Gb  Server_ctrl.o [1]
 Set_Parameter           0x00010867  0x14c  Code  Gb  menu.o [1]
 Set_Parameter::count    0x1fff0609    0x1  Data  Lc  menu.o [1]
 Set_Pid                 0x00010dff   0xb6  Code  Gb  menu.o [1]
@@ -584,21 +587,21 @@ Show_AD                 0x00010bb7  0x158  Code  Gb  menu.o [1]
 Show_Distance           0x00010eb5   0x48  Code  Gb  menu.o [1]
 Show_Menu               0x000106c7   0xa0  Code  Lc  menu.o [1]
 Show_Pid                0x00010d0f   0xf0  Code  Gb  menu.o [1]
-Speed_PID_Ctrl          0x00014801   0x72  Code  Gb  Motor_ctrl.o [1]
+Speed_PID_Ctrl          0x000147f5   0x72  Code  Gb  Motor_ctrl.o [1]
 StopFlag                0x1fff0605    0x1  Data  Gb  main.o [1]
 StopFlag1               0x1fff0606    0x1  Data  Gb  main.o [1]
 Superware_Get_Distance  0x0001196d   0x2a  Code  Gb  Superware.o [1]
 Superware_Init          0x00011935   0x38  Code  Gb  Superware.o [1]
-System_Init             0x0001438d   0xd2  Code  Gb  main.o [1]
+System_Init             0x00014381   0xd2  Code  Gb  main.o [1]
 TimeCount1              0x1fff0607    0x1  Data  Gb  main.o [1]
 TimeCount2              0x1fff0608    0x1  Data  Gb  main.o [1]
 UARTN                   0x1fff0454   0x14  Data  Gb  MK66_uart.o [1]
 UP_Value                0x1fff0554   0x20  Data  Gb  main.o [1]
 Value                   0x1fff04f4   0x60  Data  Gb  ADC.o [1]
-_LocaleC_isalpha        0x0001386b    0xc  Code  Gb  xlocale_c.o [3]
-_LocaleC_islower        0x00013865    0x4  Code  Gb  xlocale_c.o [3]
-_LocaleC_isspace        0x00013881   0x14  Code  Gb  xlocale_c.o [3]
-_LocaleC_isupper        0x00013869    0x2  Code  Gb  xlocale_c.o [3]
+_LocaleC_isalpha        0x000138a7    0xc  Code  Gb  xlocale_c.o [3]
+_LocaleC_islower        0x000138a1    0x4  Code  Gb  xlocale_c.o [3]
+_LocaleC_isspace        0x000138bd   0x14  Code  Gb  xlocale_c.o [3]
+_LocaleC_isupper        0x000138a5    0x2  Code  Gb  xlocale_c.o [3]
 _Locale_lconv           0x1fff0474   0x38  Data  Lc  xlocale_c.o [3]
 __BOOT_STACK_ADDRESS {Abs}
                         0x2002fff8         Data  Gb  command line/config [2]
@@ -608,18 +611,18 @@ __aeabi_d2f             0x00011305         Code  Gb  DblToFlt.o [4]
 __aeabi_dadd            0x000131a9         Code  Gb  DblAdd.o [4]
 __aeabi_ddiv            0x000116b1         Code  Gb  DblDiv.o [4]
 __aeabi_dmul            0x00012bbd         Code  Gb  DblMul.o [4]
-__aeabi_dsub            0x000138a5         Code  Gb  DblSub.o [4]
+__aeabi_dsub            0x000138e1         Code  Gb  DblSub.o [4]
 __aeabi_f2d             0x000112ad         Code  Gb  FltToDbl.o [4]
 __aeabi_i2d             0x00013185         Code  Gb  S32ToDbl.o [4]
 __aeabi_memclr4         0x00010ff9         Code  Gb  ABImemclr4.o [5]
 __aeabi_ui2d            0x00011695         Code  Gb  U32ToDbl.o [4]
-__cmain                 0x000151c1         Code  Gb  cmain.o [5]
+__cmain                 0x000151a9         Code  Gb  cmain.o [5]
 __code_start__ {Abs}    0x00010410         Data  Gb  command line/config [2]
 __data_GetMemChunk      0x0001355d   0x2c  Code  Gb  xgetmemchunk.o [3]
 __data_GetMemChunk::start
                         0x1fff05ec    0x4  Data  Lc  xgetmemchunk.o [3]
-__exit                  0x000139e1         Code  Gb  XXexit.o [5]
-__iar_Memchr            0x00013989         Code  Gb  memchr.o [5]
+__exit                  0x00013a1d         Code  Gb  XXexit.o [5]
+__iar_Memchr            0x000139c5         Code  Gb  memchr.o [5]
 __iar_Memset4_word      0x00011a05         Code  Gb  ABImemset48.o [5]
 __iar_Memset8_word      0x00011a05         Code  Gb  ABImemset48.o [5]
 __iar_Sto64             0x00012455  0x19e  Code  Gb  strto64.o [4]
@@ -628,17 +631,17 @@ __iar_Stopfx            0x00012e9b  0x122  Code  Gb  iar_Stopfx.o [3]
 __iar_Stoxflt           0x00013321  0x208  Code  Gb  iar_Stoxflt.o [3]
 __iar_Stoxflt::digits   0x0001352c   0x18  Data  Lc  iar_Stoxflt.o [3]
 __iar_Stoxflt::vals     0x00013544   0x18  Data  Lc  iar_Stoxflt.o [3]
-__iar_dadd              0x000138b5         Code  Gb  DblSub.o [4]
-__iar_data_init3        0x00015141   0x28  Code  Gb  data_init.o [5]
+__iar_dadd              0x000138f1         Code  Gb  DblSub.o [4]
+__iar_data_init3        0x00015129   0x28  Code  Gb  data_init.o [5]
 __iar_dsub              0x000131b9         Code  Gb  DblAdd.o [4]
 __iar_dsubStart         0x000131cb         Code  Gb  DblAdd.o [4]
 __iar_frexp             0x00012b59         Code  Gb  frexp.o [4]
 __iar_frexpl            0x00012b59         Code  Gb  frexp.o [4]
 __iar_globLocale        0x1fff04ac   0x48  Data  Lc  xlocale_c.o [3]
-__iar_global_Locale     0x00013895    0x4  Code  Gb  xlocale_c.o [3]
-__iar_init_vfp          0x0001518d         Code  Gb  fpinit_M.o [4]
+__iar_global_Locale     0x000138d1    0x4  Code  Gb  xlocale_c.o [3]
+__iar_init_vfp          0x00015175         Code  Gb  fpinit_M.o [4]
 __iar_ldexp64           0x00012d61         Code  Gb  ldexp.o [4]
-__iar_program_start     0x00015375         Code  Gb  cstartup_M.o [5]
+__iar_program_start     0x0001535d         Code  Gb  cstartup_M.o [5]
 __iar_scalbln64         0x00012d61         Code  Gb  ldexp.o [4]
 __iar_scalbn64          0x00012d61         Code  Gb  ldexp.o [4]
 __iar_softfp___iar_frexp64
@@ -648,15 +651,15 @@ __iar_softfp_frexpl     0x00012b4d         Code  Gb  frexp.o [4]
 __iar_systems$$module {Abs}
                         0x00000001         Data  Gb  command line/config [2]
 __iar_vfp_atof          0x000112fb    0x8  Code  Gb  math_wrappers64.o [4]
-__iar_zero_init3        0x00015101   0x40  Code  Gb  zero_init3.o [5]
-__low_level_init        0x000151db    0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3        0x000150e9   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000151c3    0x4  Code  Gb  low_level_init.o [3]
 __no_free_malloc        0x00012689   0x40  Code  Gb  no_free_heap0.o [3]
 __vector_table          0x00010000  0x410  Data  Gb  vectors.o [1]
-_call_main              0x000151cd         Code  Gb  cmain.o [5]
+_call_main              0x000151b5         Code  Gb  cmain.o [5]
 _exit                   0x00013589         Code  Gb  cexit.o [5]
-_main                   0x000151d7         Code  Gb  cmain.o [5]
-abs                     0x00013f2d    0x8  Code  Gb  abs.o [3]
-adc_ave                 0x00014973   0x3e  Code  Gb  Stop.o [1]
+_main                   0x000151bf         Code  Gb  cmain.o [5]
+abs                     0x00013f21    0x8  Code  Gb  abs.o [3]
+adc_ave                 0x00014967   0x3e  Code  Gb  Stop.o [1]
 adc_init                0x000126d1  0x1f4  Code  Gb  MK66_adc.o [1]
 adc_once                0x000128c5   0x4e  Code  Gb  MK66_adc.o [1]
 adc_start               0x00012913   0x46  Code  Lc  MK66_adc.o [1]
@@ -664,7 +667,7 @@ assert_failed           0x00012abb   0x2c  Code  Gb  MK66_conf.o [1]
 atof                    0x00012639    0x8  Code  Gb  strto64.o [4]
 beep_on                 0x1fff0604    0x1  Data  Gb  Beep.o [1]
 bus_clk_khz             0x1fff05e4    0x4  Data  Gb  system_MK66FX18.o [1]
-common_startup          0x00014d7d   0x8a  Code  Gb  system_MK66FX18.o [1]
+common_startup          0x00014d65   0x8a  Code  Gb  system_MK66FX18.o [1]
 core_clk_khz            0x1fff05dc    0x4  Data  Gb  system_MK66FX18.o [1]
 core_clk_mhz            0x1fff05e0    0x4  Data  Gb  system_MK66FX18.o [1]
 ddiv                    0x000121cd   0xd0  Code  Lc  strto64.o [4]
@@ -677,21 +680,22 @@ gpio_get                0x0001206b   0x3e  Code  Gb  MK66_gpio.o [1]
 gpio_init               0x00011ef5   0xbe  Code  Gb  MK66_gpio.o [1]
 gpio_set                0x00011fb3   0x7c  Code  Gb  MK66_gpio.o [1]
 gpio_turn               0x0001202f   0x3c  Code  Gb  MK66_gpio.o [1]
-house                   0x00013f34  0x400  Data  Gb  OLED.o [1]
-isalpha                 0x00013851   0x14  Code  Gb  isalpha.o [3]
-isspace                 0x0001383d   0x14  Code  Gb  isspace.o [3]
+house                   0x00013f28  0x400  Data  Gb  OLED.o [1]
+isalpha                 0x0001388d   0x14  Code  Gb  isalpha.o [3]
+isspace                 0x00013879   0x14  Code  Gb  isspace.o [3]
 key                     0x1fff0600    0x2  Data  Gb  key.o [1]
-key_init                0x00014a99   0x52  Code  Gb  VCAN_key.o [1]
+key_init                0x00014a81   0x52  Code  Gb  VCAN_key.o [1]
 ldexp                   0x00012d61         Code  Gb  ldexp.o [4]
 ldexpl                  0x00012d61         Code  Gb  ldexp.o [4]
+led                     0x000135cf   0x3c  Code  Gb  VCAN_LED.o [1]
 led_init                0x00013595   0x3a  Code  Gb  VCAN_LED.o [1]
-led_turn                0x000135cf   0x32  Code  Gb  VCAN_LED.o [1]
-localeconv              0x00013899    0x4  Code  Gb  xlocale_c.o [3]
+led_turn                0x0001360b   0x32  Code  Gb  VCAN_LED.o [1]
+localeconv              0x000138d5    0x4  Code  Gb  xlocale_c.o [3]
 lock_status_flag        0x1fff060b    0x1  Data  Gb  Server_ctrl.o [1]
-main                    0x0001445f   0x1a  Code  Gb  main.o [1]
-memchr                  0x00013989         Code  Gb  memchr.o [5]
+main                    0x00014453   0x1a  Code  Gb  main.o [1]
+memchr                  0x000139c5         Code  Gb  memchr.o [5]
 menu_op                 0x1fff0574    0xc  Data  Gb  menu.o [1]
-menus                   0x00014f68   0xc0  Data  Gb  menu.o [1]
+menus                   0x00014f50   0xc0  Data  Gb  menu.o [1]
 nops                    0x00011a39   0x10  Code  Lc  IIC.o [1]
 port_init               0x0001296d   0x4a  Code  Gb  MK66_port.o [1]
 port_init_NoALT         0x000129b7   0x6a  Code  Gb  MK66_port.o [1]
@@ -704,17 +708,17 @@ scalbnl                 0x00012d61         Code  Gb  ldexp.o [4]
 set_vector_handler      0x00012a4b   0x22  Code  Gb  misc.o [1]
 soft_delay_ms           0x00012a9d   0x1e  Code  Gb  MK66_conf.o [1]
 soft_delay_us           0x00012a79   0x24  Code  Gb  MK66_conf.o [1]
-start                   0x00014d19   0x20  Code  Gb  system_MK66FX18.o [1]
+start                   0x00014d01   0x20  Code  Gb  system_MK66FX18.o [1]
 strcmp                  0x0001136d         Code  Gb  strcmp.o [5]
-sysinit                 0x00014d39   0x44  Code  Gb  system_MK66FX18.o [1]
-uart_init               0x00013605  0x1de  Code  Gb  MK66_uart.o [1]
-uart_putbuff            0x000137fd   0x26  Code  Gb  MK66_uart.o [1]
-uart_putchar            0x000137e3   0x1a  Code  Gb  MK66_uart.o [1]
-vcan_sendware           0x00014a59   0x38  Code  Gb  VCAN_computer.o [1]
+sysinit                 0x00014d21   0x44  Code  Gb  system_MK66FX18.o [1]
+uart_init               0x00013641  0x1de  Code  Gb  MK66_uart.o [1]
+uart_putbuff            0x00013839   0x26  Code  Gb  MK66_uart.o [1]
+uart_putchar            0x0001381f   0x1a  Code  Gb  MK66_uart.o [1]
+vcan_sendware           0x00014a41   0x38  Code  Gb  VCAN_computer.o [1]
 viameter                0x1fff05ac    0x4  Data  Gb  Motor_ctrl.o [1]
 viameter_on_flag        0x1fff060a    0x1  Data  Gb  Motor_ctrl.o [1]
-wdog_disable            0x00014e45   0x16  Code  Gb  MK66_wdog.o [1]
-wdog_unlock             0x00014e5b   0x20  Code  Lc  MK66_wdog.o [1]
+wdog_disable            0x00014e2d   0x16  Code  Gb  MK66_wdog.o [1]
+wdog_unlock             0x00014e43   0x20  Code  Lc  MK66_wdog.o [1]
 weight                  0x1fff0410   0x14  Data  Gb  ADC.o [1]
 write_vtor              0x00012a29   0x22  Code  Gb  misc.o [1]
 
@@ -725,9 +729,9 @@ write_vtor              0x00012a29   0x22  Code  Gb  misc.o [1]
 [4] = m7M_tls.a
 [5] = rt7M_tl.a
 
-  17 592 bytes of readonly  code memory
+  17 568 bytes of readonly  code memory
    3 956 bytes of readonly  data memory
-   1 023 bytes of readwrite data memory
+   1 024 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
